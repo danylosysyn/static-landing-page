@@ -1,17 +1,85 @@
 @import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -21,8 +89,17 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -30,16 +107,20 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: "";
   content: none;
 }
@@ -47,4 +128,56 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 10vw;
+}
+.navigation__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navigation__list_element {
+  display: inline-block;
+  margin: 15px;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+}
+.navigation__list_element:hover {
+  border-bottom: 3px solid transparent;
+  -o-border-image: linear-gradient(to left, hsl(192, 70%, 51%), hsl(136, 65%, 51%));
+     border-image: linear-gradient(to left, hsl(192, 70%, 51%), hsl(136, 65%, 51%));
+  border-image-slice: 1;
+  margin-bottom: -3px;
+}
+.navigation__list_element a {
+  display: flex;
+  height: 70px;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+  color: hsl(233, 8%, 62%);
+}
+
+.default-submit {
+  align-self: center;
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(to left, hsl(192, 70%, 51%), hsl(136, 65%, 51%));
+  border-radius: 30px;
+  height: 50px;
+  padding: 20px 40px;
+  border: none;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: hsl(0, 0%, 98%);
+}
+.default-submit:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
